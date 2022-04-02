@@ -20,16 +20,13 @@ Post.init(
     body_content: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        len: [1, 255],
-      },
-      user_id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        references: {
-          model: "user",
-          key: "id",
-        },
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "user",
+        key: "id",
       },
     },
     created_at: {
