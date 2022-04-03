@@ -101,7 +101,7 @@ router.get("/signup", (req, res) => {
 });
 
 router.get("*", (req, res) => {
-  res.status(404).send("Sorry, that route does not exist.");
+  res.status(404).send("Oops! Sorry about that, Can't go there!");
 });
 
 module.exports = router;
