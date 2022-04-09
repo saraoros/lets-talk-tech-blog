@@ -12,7 +12,7 @@
                 <input type="text" name="post-title" id="post-title" value="{{post.title}}" />
             </div>
             <div class="post-content">
-                <label for="post-content">Tech Content</label>
+                <label for="post-content">Tech Talk Text</label>
                 <textarea name="post-content" id="post-content">{{post.content}}</textarea>
             </div>
             <buttion type="submit">Edit Your Post</button>
@@ -23,6 +23,6 @@
 </article>
 
 {{#if loggedIn}}
-<script src="/public/javascript/delete-post.js"></script>
-<script src="/public/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/edit-post.js"></script>
 {{/if}}

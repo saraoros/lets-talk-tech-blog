@@ -2,6 +2,14 @@ const { Post } = require("../models");
 
 const postdata = [
   {
+    body_content: "Have you Learned to Code?",
+    user_id: 2,
+  },
+  {
+    body_content: "I am learning to code",
+    user_id: 3,
+  },
+  {
     body_content: "Donec posuere metus vitae ipsum.",
     user_id: 10,
   },

@@ -8,8 +8,12 @@ html {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    background-color: #657fa1;
-    color: #333;
+    color: rgb(43, 39, 39);
+}
+
+main,
+.site-name {
+    background-color: #ffffff;
 }
 
 a,
@@ -20,7 +24,7 @@ a,
 
 a:hover,
 .btn-no-style:hover {
-    color: #294175;
+    color: #d5ebed;
 }
 
 a {
@@ -30,7 +34,7 @@ a {
 }
 
 button {
-    background-color: #154175;
+    background-color: #225ca3;
     border: 0;
     padding: 1%;
     color: white;
@@ -44,3 +48,8 @@ button:hover {
     background-color: #3486eb;
 }
 
+.post-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}

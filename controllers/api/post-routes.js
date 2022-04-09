@@ -70,7 +70,7 @@ router.get("/:id", (req, res) => {
 router.post("/", withAuth, (req, res) => {
   Post.create({
     title: req.body.title,
-    body_content: req.body.body_content,
+    body_content: req.body.post_content,
     user_id: req.session.user_id,
   })
     .then((dbPostData) => res.json(dbPostData))
@@ -85,7 +85,7 @@ router.put("/:id", withAuth, (req, res) => {
   Post.update(
     {
       title: req.body.title,
-      body_content: req.body.body_content,
+      body_content: req.body.post_content,
     },
     {
       where: {
@@ -96,7 +96,7 @@ router.put("/:id", withAuth, (req, res) => {
     .then((dbPostData) => {
       if (!dbPostData) {
         res.status(404).json({
-          message: "No post found with this id",
+          message: "No post found with this id, Please try another one!",
         });
         return;
       }
@@ -118,7 +118,7 @@ router.delete("/:id", withAuth, (req, res) => {
     .then((dbPostData) => {
       if (!dbPostData) {
         res.status(404).json({
-          message: "OOPS! No post found with this id",
+          message: "OOPS! No post found with this id! Please try another ID.",
         });
         return;
       }

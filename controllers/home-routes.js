@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const res = require("express/lib/response");
 const sequelize = require("../config/connection");
 const { User, Post, Comment } = require("../models");
 
@@ -87,7 +88,6 @@ router.get("/login", (req, res) => {
     res.redirect("/");
     return;
   }
-
   res.render("login");
 });
 
@@ -96,12 +96,11 @@ router.get("/signup", (req, res) => {
     res.redirect("/");
     return;
   }
-
   res.render("signup");
 });
 
 router.get("*", (req, res) => {
-  res.status(404).send("Oops! Sorry about that, Can't go there!");
+  res.status(404).send(`Sorry, there's been an error with this page`);
 });
 
 module.exports = router;
