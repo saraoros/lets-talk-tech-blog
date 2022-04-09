@@ -1,28 +1,30 @@
 <a href="/dashboard" class="back">Dashboard</a>
 
-<article class = "dash-page">
+<article class = "new-page">
 <section class = "edit-form-page">
     <div class = "form-heading">
         <h1>Edit Your Post</h1>
     </div>
     <div class ="form-section">
         <form class="edit-post-form">
-            <div class ="post-title">
+            <div class ="post-title-section">
                 <label for="post-title">Blog Title</label>
-                <input type="text" name="post-title" id="post-title" value="{{post.title}}" />
+                 <br />
+                <input id="post-title" type="text" name="post-title"  value="{{post.title}}" />
             </div>
             <div class="post-content">
                 <label for="post-content">Tech Talk Text</label>
-                <textarea name="post-content" id="post-content">{{post.content}}</textarea>
+                 <br />
+                <textarea id="post-content" name="post-content" class="entry-field" >{{post.content}}</textarea>
             </div>
             <buttion type="submit">Edit Your Post</button>
-            <button type="button" class="delete-post">Delete Your Post</button>
+            <button type="button" class="delete-post-btn">Delete Your Post</button>
         </form>
     </div>
 </section>
 </article>
 
 {{#if loggedIn}}
-<script src="/javascript/delete-post.js"></script>
-<script src="/javascript/edit-post.js"></script>
+<script src="/public/javascript/edit-post.js"></script>
+<script src="/public/javascript/delete-post.js"></script>
 {{/if}}
