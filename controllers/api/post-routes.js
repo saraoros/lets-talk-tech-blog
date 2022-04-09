@@ -82,6 +82,7 @@ router.post("/", withAuth, (req, res) => {
 
 // Update a post
 router.put("/:id", withAuth, (req, res) => {
+  console.log(req.body.body_content);
   Post.update(
     {
       title: req.body.title,
@@ -94,6 +95,7 @@ router.put("/:id", withAuth, (req, res) => {
     }
   )
     .then((dbPostData) => {
+      console.log(dbPostData);
       if (!dbPostData) {
         res.status(404).json({
           message: "No post found with this id, Please try another one!",
