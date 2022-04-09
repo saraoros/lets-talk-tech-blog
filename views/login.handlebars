@@ -1,52 +1,27 @@
-  <div class="content-form">
+<section class="login-page">
+  <div class="form-heading">
+    <h2>Let's Get Tech Talkin'! Login Here:</h2>
+  </div>
+  <div class="form-section">
     <form class="login-form">
-      <label for="email-login">Enter email address:</label>
-      <input
-        type="text"
-        placeholder="Email Address"
-        name="email"
-        id="email-login"
-        class="form-input"
-      />
-      <label for="password-login">Enter password:</label>
-      <input
-        type="password"
-        placeholder="Password"
-        name="password"
-        id="password-login"
-        class="form-input"
-      />
-      <button type="submit">Log In</button>
-    </form>
-    <br />
-    <form class="signup-form">
-      <label for="username-signup">Create a Username:</label>
-      <input
-        type="text"
-        placeholder="Username"
-        name="username"
-        id="username-signup"
-        class="form-input"
-      />
-      <label for="email-signup">Enter email address:</label>
-      <input
-        type="text"
-        placeholder="Email Address"
-        name="email"
-        id="email-signup"
-        class="form-input"
-      />
-      <label for="password-signup">Enter password:</label>
-      <input
-        type="password"
-        placeholder="Password"
-        name="password"
-        id="password-signup"
-        class="form-input"
-      />
-      <button type="submit">Sign Up!</button>
+      <div>
+        <label for="username-login">Enter Your Username:</label>
+        <br />
+        <input id="username-login" type="text" class="entry-field" />
+      </div>
+      <br />
+      <div>
+        <label for="password-login">Enter Your Password: </label>
+        <br />
+        <input id="password-login" type="password" class="entry-field" />
+      </div>
+      <br />
+      <div>
+        <button type="submit" class="login-signup-btn">Login</button>
+      </div>
     </form>
   </div>
+  <a href="/signup" class="sign-in-link">New here? Sign Up Instead!</a>
 </section>
 
-<script src="/javascript/login.js"></script>
+<script src="/public/javascript/login.js"></script>
