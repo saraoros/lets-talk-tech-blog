@@ -15,7 +15,7 @@
 
   # Description
 
-  `This was created to have a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.`
+  `This app was created to have a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.`
 
   # Images
 
@@ -28,7 +28,13 @@
 
 # Technologies
 
-- JavaScript,CSS,ES6,Node.js,Express.js,mySQL,Sequelize
+- JavaScript
+- CSS
+- ES6
+- Node.js
+- Express.js
+- mySQL
+- Sequelize
 
 # Repository
 
