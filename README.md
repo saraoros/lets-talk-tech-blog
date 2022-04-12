@@ -37,6 +37,7 @@
 - Express.js
 - mySQL
 - Sequelize
+- Handlebars
 
 # Repository
 
