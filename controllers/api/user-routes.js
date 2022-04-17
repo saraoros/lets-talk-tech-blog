@@ -88,22 +88,11 @@ router.post("/login", (req, res) => {
       return;
     }
 
-    req.session.save(() => {
-      req.session.user_id = dbUserData.id;
-      req.session.username = dbUserData.username;
-      req.session.loggedIn = true;
-
-      res.json({
-        user: dbUserData,
-        message: "You're logged in! Let the Tech Talk begin!",
-      });
-    });
-
     const validPassword = dbUserData.checkPassword(req.body.password);
 
     if (!validPassword) {
       res.status(400).json({
-        message: "Sorry, that's an incorrect password!",
+        message: "Sorry, that's an incorrect username and/or  password!",
       });
       return;
     }
@@ -113,7 +102,7 @@ router.post("/login", (req, res) => {
       req.session.username = dbUserData.username;
       req.session.loggedIn = true;
 
-      res.json({
+      return res.json({
         user: dbUserData,
         message: "You're logged in! Let the Tech Talkin' begin!",
       });
