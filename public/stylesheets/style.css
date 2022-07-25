@@ -10,7 +10,7 @@ html {
   margin: 0;
   font-family: sans-serif;
   color: #333;
-  background-color: #040505;
+  background-color: #6a9983;
 }
 
 main,
@@ -229,11 +229,16 @@ main {
   width: 100px;
 }
 
+.wrapper {
+  background-color: #6a9983;
+}
+
 footer {
   align-content: center;
-  margin-bottom: auto;
+  margin-top: 100px;
+  /* margin-bottom: auto; */
   margin-left: 30%;
   font-weight: bolder;
-  background-color: #030301;
+  background-color: #6a9983;
   color: rgb(224, 224, 224);
 }
